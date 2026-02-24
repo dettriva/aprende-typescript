@@ -1,0 +1,136 @@
+site_name: Aprende TypeScript
+site_description: "De Python a TypeScript: Guía completa para desarrolladores web"
+site_author: Daniele
+site_url: https://aprende-typescript.dev
+
+repo_name: aprende-typescript
+repo_url: https://github.com/dettriva/aprende-typescript
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: blue
+      accent: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: slate
+      primary: blue
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+  icon:
+    logo: material/language-typescript
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: es
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dettriva
+  generator: false
+
+extra_css:
+  - assets/extra.css
+extra_javascript:
+  - assets/extra.js
+
+copyright: "Aprende TypeScript &copy; 2026 — Inspirado en aprendepython.es"
+
+nav:
+  - Inicio: index.md
+  - Antes de empezar: antes-de-empezar.md
+  - Plan de estudio: plan.md
+  - Bases de JavaScript:
+    - Conceptos fundamentales: capitulos/bases-1-conceptos.md
+    - JavaScript esencial: capitulos/bases-2-javascript.md
+    - "JavaScript moderno (ES6+)": capitulos/bases-3-es6.md
+    - Asincronía y herramientas: capitulos/bases-4-asincronia.md
+  - Fundamentos de TypeScript:
+    - Bienvenido a TypeScript: capitulos/01-bienvenido.md
+    - Tipos básicos: capitulos/02-tipos-basicos.md
+    - Interfaces y Type Aliases: capitulos/03-interfaces.md
+    - Funciones tipadas: capitulos/04-funciones.md
+  - Tipos intermedios:
+    - Uniones e intersecciones: capitulos/05-uniones.md
+    - Generics: capitulos/06-generics.md
+    - Enums y Literal Types: capitulos/07-enums.md
+    - Utility Types: capitulos/08-utility-types.md
+  - Tipos avanzados:
+    - Clases y OOP: capitulos/09-clases.md
+    - Módulos: capitulos/10-modulos.md
+    - Mapped y Conditional Types: capitulos/11-tipos-avanzados.md
+    - Type Guards: capitulos/12-type-guards.md
+    - Type-Level Programming: capitulos/13-type-level.md
+  - Ecosistema:
+    - Vue 3 + TypeScript: capitulos/14-vue.md
+    - Node.js + TypeScript: capitulos/15-node.md
+    - "Proyecto final: MakeMenu": capitulos/16-proyecto-final.md
+  - Nivel experto:
+    - Varianza y Tipos Nominales: capitulos/17-varianza-nominal.md
+    - Patrones para Librerías: capitulos/18-patrones-librerias.md
+    - Rendimiento y Escala: capitulos/19-rendimiento-escala.md
+    - Testing de Tipos: capitulos/20-testing-libreria.md
+  - Referencia rápida: referencia-rapida.md
+  - Recursos: recursos.md
